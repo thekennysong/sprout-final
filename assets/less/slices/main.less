@@ -1,0 +1,258 @@
+header{
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    .logo-white{
+        .logo;
+        background: url('assets/logo-white.svg');
+
+    }
+}
+#call-to-action{
+    background: #333;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .title{
+        color:#fff;
+        margin-bottom: 10px;
+    }
+    .sub-title{
+        color: #fff;
+       // font-size: 16px;
+        letter-spacing: 0.2px;
+        margin-top: 16px;
+        margin-bottom: 50px;
+    }
+    .credit{
+        padding-top: 15px;
+        font-size: 12px;
+        line-height: 22px;
+        display: block;
+        color: rgb(124, 124, 124);
+        text-align: center;
+        width: 250px;
+        transform: translateY(10px);
+
+    }
+    .third{
+          transform: translateY(10px);
+    }
+    .two-third{
+        float: right;
+        iframe{
+              transform: translateY(50px);
+        }
+    }
+
+}
+#spotlight{
+    background: #eee;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    clear: both;
+    h3{
+
+        line-height: 14px;
+    }
+    .third{
+        &:first-child{
+            float: left;
+         }
+        &:last-child{
+            float: right !important;
+        }
+    }
+}
+#analytics{
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+    padding-top: 53px;
+    padding-bottom: 59px;
+    h1{
+        text-align: center;
+        color: rgb(15, 15, 15);
+    }
+    .laptop{
+        background: url('assets/ipad.png');
+        height: 470px;
+        background-size: cover;
+        background-position: 50% 0%;
+    }
+    p{
+        padding-bottom: 25px;
+    }
+    .two-third{
+        float: left;
+    }
+    .third{
+        float: right;
+        .fa-angle-right:before{
+            padding-left: 5px;
+        }
+    }
+    .features{
+        letter-spacing: 0px;
+        &:hover{
+            background: none;
+            color: darken(@green, 10%);
+        }
+    }
+}
+#brands{
+    background: #eee;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    h1{
+        text-align: center;
+        margin-bottom: 0px !important;
+    }
+    h5{
+        margin-top: 10px !important;
+        margin-bottom: 50px;
+    }
+}
+
+.grid {
+    overflow: hidden;
+    margin: 0 auto;
+    padding-left: 0px;
+    li {
+        height:100px;
+        list-style-type: none;
+        position: relative;
+        overflow: hidden;
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: 50% 0%;
+    }
+}
+
+@media all and (min-width: 27em) {
+    .grid li {
+        width: 50%;
+        float: left;
+        margin-bottom: 20px;
+    }
+
+}
+@media all and (min-width: 40em) {
+    .grid li {
+        width: 33.3333333%;
+    }
+}
+@media all and (min-width: 60em) {
+    .grid li {
+        width: 20% !important;
+    }
+}
+.dove{
+    background: url('assets/brand-dove.svg');
+}
+.spotify{
+    background: url('assets/brand-spotify.svg');
+}
+.stanford{
+    background: url('assets/brand-stanford.svg');
+}
+.razorfish{
+    background: url('assets/brand-razorfish.svg');
+}
+.zipcar{
+    background: url('assets/brand-zipcar.svg');
+}
+.grubhub{
+    background: url('assets/brand-grubhub.svg');
+}
+.wharton{
+    background: url('assets/brand-wharton.svg');
+}
+.ups{
+    background: url('assets/brand-ups.svg');
+}
+.pepsico{
+    background: url('assets/brand-pepsico.svg');
+}
+.hyatt{
+    background: url('assets/brand-hyatt.svg');
+}
+#site-footer{
+    padding-top: 57px;
+    padding-bottom: 57px;
+    h1{
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    .logo-reg{
+        .logo;
+        background: url('assets/logo.svg');
+        float: left;
+        background-size: cover;
+        //margin-right: 10px;
+
+    }
+    .top{
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    .bottom{
+        position: absolute;
+        padding-top: 75px;
+        padding-bottom: 50px;
+        .two-third{
+            float: left;
+            span{
+                bottom: 0;
+                line-height: 5.5;
+                display: inline-block;
+                text-transform: none;
+                letter-spacing: 0px;
+            }
+        }
+        .third{
+            float: right;
+            display: inline-block;
+            right: 0px;
+            text-align: right;
+            line-height: 3.5;
+            .facebook{
+                background: url('assets/icon-facebook.svg');
+                height: 24px;
+                width: 24px;
+                display: inline-block;
+            }
+            .twitter{
+                background: url('assets/icon-twitter.svg');
+                height: 24px;
+                width: 24px;
+                display: inline-block;
+            }
+            .google{
+                background: url('assets/icon-googleplus.svg');
+                height: 24px;
+                width: 24px;
+                display: inline-block;
+            }
+        }
+        .disclaimer{
+            text-align: center;
+            margin: auto;
+            .copyright{
+                text-transform: none;
+                letter-spacing: 0px;
+                .font-weight-light();
+                text-align: center;
+                width: 100%;
+                position: absolute;
+                bottom: 25px;
+                left:0;
+                right:0;
+                margin-left:auto;
+                margin-right:auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,145 @@
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 993px) {
+    .container{
+        width: 960px;
+    }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    header{
+        width: 960px;
+        left: 0%;
+        transform: none;
+    }
+    .container{
+        padding: 20px;
+    }
+    #call-to-action{
+        .two-third{
+            float: none;
+            //width: 95%;
+            //text-align: center;
+        }
+    }
+    .hero-video{
+        width: 405px !important;
+        height: 239px !important;
+    }
+    #spotlight{
+        .third{
+            display: block;
+            float: none !important;
+            &:last-child{
+                float: none !important;
+            }
+        }
+    }
+
+    .image{
+        margin: auto;
+    }
+    #analytics {
+        .two-third{
+            float: none;
+            width: 475px;
+        }
+        .third{
+            float: none;
+        }
+        .laptop{
+            height: 375px;
+        }
+    }
+    .third{
+        width: auto;
+    }
+    .ups{
+          height: 136px !important;
+    }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+#site-footer {
+    .logo-reg{
+        float: none;
+        display: block;
+        margin-left: 0px !important;
+    }
+    span{
+        display: block;
+        width: 184px;
+        line-height: 20px !important;
+    }
+    .bottom{
+        .third{
+            float: none;
+        }
+        .copyright{
+            text-align: left !important;
+            padding-left: 10px !important;
+        }
+    }
+
+}
+
+
+
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .hero-video{
+        width: 318px !important;
+        height: 188px !important;
+    }
+    #analytics{
+        .two-third{
+            width: 300px;
+        }
+        .laptop {
+            height: 250px;
+        }
+    }
+    .dove{
+        margin-bottom: 10px;
+    }
+    .razorfish{
+        background-position: 50% 30% !important;
+    }
+    .zipcar{
+        margin-bottom: 15px;
+    }
+    .grid{
+        li{
+             background-size: 50%;
+        }
+    }
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    .grid li{
+        margin-bottom: 25px;
+    }
+    .hero-video {
+        width: 255px!important;
+        height: 153px!important;
+    }
+    #analytics{
+       .two-third{
+        width: 260px;
+       }
+        .laptop{
+              height: 215px;
+        }
+    }
+}
